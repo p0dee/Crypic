@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6F541002451899E006C5E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F540FF2451899E006C5E9D /* AppDelegate.swift */; };
+		A6F541022451899E006C5E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F541012451899E006C5E9D /* SceneDelegate.swift */; };
+		A6F541042451899E006C5E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F541032451899E006C5E9D /* ContentView.swift */; };
+		A6F54106245189A0006C5E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F54105245189A0006C5E9D /* Assets.xcassets */; };
+		A6F54109245189A0006C5E9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F54108245189A0006C5E9D /* Preview Assets.xcassets */; };
+		A6F5410C245189A0006C5E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F5410A245189A0006C5E9D /* LaunchScreen.storyboard */; };
+		A6F54117245189A0006C5E9D /* CrypicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F54116245189A0006C5E9D /* CrypicTests.swift */; };
+		A6F54122245189A0006C5E9D /* CrypicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F54121245189A0006C5E9D /* CrypicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6F54113245189A0006C5E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6F540F42451899E006C5E9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6F540FB2451899E006C5E9D;
+			remoteInfo = Crypic;
+		};
+		A6F5411E245189A0006C5E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6F540F42451899E006C5E9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6F540FB2451899E006C5E9D;
+			remoteInfo = Crypic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6F540FC2451899E006C5E9D /* Crypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F540FF2451899E006C5E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6F541012451899E006C5E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6F541032451899E006C5E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6F54105245189A0006C5E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6F54108245189A0006C5E9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6F5410B245189A0006C5E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6F5410D245189A0006C5E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F54112245189A0006C5E9D /* CrypicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F54116245189A0006C5E9D /* CrypicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypicTests.swift; sourceTree = "<group>"; };
+		A6F54118245189A0006C5E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F5411D245189A0006C5E9D /* CrypicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F54121245189A0006C5E9D /* CrypicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypicUITests.swift; sourceTree = "<group>"; };
+		A6F54123245189A0006C5E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6F540F92451899E006C5E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F5410F245189A0006C5E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F5411A245189A0006C5E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6F540F32451899E006C5E9D = {
+			isa = PBXGroup;
+			children = (
+				A6F540FE2451899E006C5E9D /* Crypic */,
+				A6F54115245189A0006C5E9D /* CrypicTests */,
+				A6F54120245189A0006C5E9D /* CrypicUITests */,
+				A6F540FD2451899E006C5E9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6F540FD2451899E006C5E9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6F540FC2451899E006C5E9D /* Crypic.app */,
+				A6F54112245189A0006C5E9D /* CrypicTests.xctest */,
+				A6F5411D245189A0006C5E9D /* CrypicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6F540FE2451899E006C5E9D /* Crypic */ = {
+			isa = PBXGroup;
+			children = (
+				A6F540FF2451899E006C5E9D /* AppDelegate.swift */,
+				A6F541012451899E006C5E9D /* SceneDelegate.swift */,
+				A6F541032451899E006C5E9D /* ContentView.swift */,
+				A6F54105245189A0006C5E9D /* Assets.xcassets */,
+				A6F5410A245189A0006C5E9D /* LaunchScreen.storyboard */,
+				A6F5410D245189A0006C5E9D /* Info.plist */,
+				A6F54107245189A0006C5E9D /* Preview Content */,
+			);
+			path = Crypic;
+			sourceTree = "<group>";
+		};
+		A6F54107245189A0006C5E9D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6F54108245189A0006C5E9D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6F54115245189A0006C5E9D /* CrypicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6F54116245189A0006C5E9D /* CrypicTests.swift */,
+				A6F54118245189A0006C5E9D /* Info.plist */,
+			);
+			path = CrypicTests;
+			sourceTree = "<group>";
+		};
+		A6F54120245189A0006C5E9D /* CrypicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6F54121245189A0006C5E9D /* CrypicUITests.swift */,
+				A6F54123245189A0006C5E9D /* Info.plist */,
+			);
+			path = CrypicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6F540FB2451899E006C5E9D /* Crypic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F54126245189A0006C5E9D /* Build configuration list for PBXNativeTarget "Crypic" */;
+			buildPhases = (
+				A6F540F82451899E006C5E9D /* Sources */,
+				A6F540F92451899E006C5E9D /* Frameworks */,
+				A6F540FA2451899E006C5E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crypic;
+			productName = Crypic;
+			productReference = A6F540FC2451899E006C5E9D /* Crypic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6F54111245189A0006C5E9D /* CrypicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F54129245189A0006C5E9D /* Build configuration list for PBXNativeTarget "CrypicTests" */;
+			buildPhases = (
+				A6F5410E245189A0006C5E9D /* Sources */,
+				A6F5410F245189A0006C5E9D /* Frameworks */,
+				A6F54110245189A0006C5E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6F54114245189A0006C5E9D /* PBXTargetDependency */,
+			);
+			name = CrypicTests;
+			productName = CrypicTests;
+			productReference = A6F54112245189A0006C5E9D /* CrypicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6F5411C245189A0006C5E9D /* CrypicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F5412C245189A0006C5E9D /* Build configuration list for PBXNativeTarget "CrypicUITests" */;
+			buildPhases = (
+				A6F54119245189A0006C5E9D /* Sources */,
+				A6F5411A245189A0006C5E9D /* Frameworks */,
+				A6F5411B245189A0006C5E9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6F5411F245189A0006C5E9D /* PBXTargetDependency */,
+			);
+			name = CrypicUITests;
+			productName = CrypicUITests;
+			productReference = A6F5411D245189A0006C5E9D /* CrypicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6F540F42451899E006C5E9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = p0dee;
+				TargetAttributes = {
+					A6F540FB2451899E006C5E9D = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					A6F54111245189A0006C5E9D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = A6F540FB2451899E006C5E9D;
+					};
+					A6F5411C245189A0006C5E9D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = A6F540FB2451899E006C5E9D;
+					};
+				};
+			};
+			buildConfigurationList = A6F540F72451899E006C5E9D /* Build configuration list for PBXProject "Crypic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6F540F32451899E006C5E9D;
+			productRefGroup = A6F540FD2451899E006C5E9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6F540FB2451899E006C5E9D /* Crypic */,
+				A6F54111245189A0006C5E9D /* CrypicTests */,
+				A6F5411C245189A0006C5E9D /* CrypicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6F540FA2451899E006C5E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F5410C245189A0006C5E9D /* LaunchScreen.storyboard in Resources */,
+				A6F54109245189A0006C5E9D /* Preview Assets.xcassets in Resources */,
+				A6F54106245189A0006C5E9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F54110245189A0006C5E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F5411B245189A0006C5E9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6F540F82451899E006C5E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F541002451899E006C5E9D /* AppDelegate.swift in Sources */,
+				A6F541022451899E006C5E9D /* SceneDelegate.swift in Sources */,
+				A6F541042451899E006C5E9D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F5410E245189A0006C5E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F54117245189A0006C5E9D /* CrypicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F54119245189A0006C5E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F54122245189A0006C5E9D /* CrypicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6F54114245189A0006C5E9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6F540FB2451899E006C5E9D /* Crypic */;
+			targetProxy = A6F54113245189A0006C5E9D /* PBXContainerItemProxy */;
+		};
+		A6F5411F245189A0006C5E9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6F540FB2451899E006C5E9D /* Crypic */;
+			targetProxy = A6F5411E245189A0006C5E9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6F5410A245189A0006C5E9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6F5410B245189A0006C5E9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6F54124245189A0006C5E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6F54125245189A0006C5E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6F54127245189A0006C5E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Crypic/Preview Content\"";
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Crypic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.Crypic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6F54128245189A0006C5E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Crypic/Preview Content\"";
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Crypic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.Crypic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6F5412A245189A0006C5E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				INFOPLIST_FILE = CrypicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CrypicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypic.app/Crypic";
+			};
+			name = Debug;
+		};
+		A6F5412B245189A0006C5E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				INFOPLIST_FILE = CrypicTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CrypicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypic.app/Crypic";
+			};
+			name = Release;
+		};
+		A6F5412D245189A0006C5E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				INFOPLIST_FILE = CrypicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CrypicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crypic;
+			};
+			name = Debug;
+		};
+		A6F5412E245189A0006C5E9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMN8ZT25WS;
+				INFOPLIST_FILE = CrypicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.CrypicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crypic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6F540F72451899E006C5E9D /* Build configuration list for PBXProject "Crypic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F54124245189A0006C5E9D /* Debug */,
+				A6F54125245189A0006C5E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F54126245189A0006C5E9D /* Build configuration list for PBXNativeTarget "Crypic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F54127245189A0006C5E9D /* Debug */,
+				A6F54128245189A0006C5E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F54129245189A0006C5E9D /* Build configuration list for PBXNativeTarget "CrypicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F5412A245189A0006C5E9D /* Debug */,
+				A6F5412B245189A0006C5E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F5412C245189A0006C5E9D /* Build configuration list for PBXNativeTarget "CrypicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F5412D245189A0006C5E9D /* Debug */,
+				A6F5412E245189A0006C5E9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6F540F42451899E006C5E9D /* Project object */;
+}
