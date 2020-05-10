@@ -15,17 +15,16 @@ struct ImageEditorView: View {
     
     @State var isTakingEffect: Bool = false
     
+    @State var selectedIndex: Int = 0
+    
     var doneAction: (_ result: UIImage) -> Void
     
     var body: some View {
-        VStack {
-            GeometryReader { proxy in
-                EffectImage(image: self.$image, isOn: self.$isTakingEffect)
-                    .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
-                    .clipped()
-            }
-            Switcher(initialOn: self.$isTakingEffect)
+        VStack(spacing: 0) {
+            EffectImage(image: self.$image, isOn: self.$isTakingEffect)
             Spacer(minLength: 20)
+            SegmentedControl(labels: ["One", "Two", "Three", "Four", "Five"], initialSelectedIndex: $selectedIndex)
+            Spacer().layoutPriority(1)
             Button(action: {
                 self.doneAction(self.image)
             }) {
@@ -36,7 +35,7 @@ struct ImageEditorView: View {
                     .cornerRadius(12)
             }
         }
-        .padding(.init(top: 60, leading: 20, bottom: 0, trailing: 20))
+        .padding(.init(top: 20, leading: 20, bottom: 0, trailing: 20))
     }
     
 }
@@ -56,18 +55,80 @@ struct Effect {
     
 }
 
+struct ImageView: View {
+    
+    struct HeightPreference: PreferenceKey {
+        
+        static var defaultValue: CGFloat = 0
+        
+        static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+            value = nextValue()
+        }
+        
+    }
+    
+    @State private var height: CGFloat = 0
+    
+    @Binding var image: UIImage
+    
+    var body: some View {
+        GeometryReader { proxy in
+            Image(uiImage: self.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: proxy.size.width)
+                .preference(key: HeightPreference.self, value: self.height(width: proxy.size.width))
+        }
+        .frame(height: height)
+        .onPreferenceChange(HeightPreference.self) { (value) in
+            self.height = value
+        }
+    }
+    
+    private func height(width: CGFloat) -> CGFloat {
+        return image.size.height * width / image.size.width
+    }
+    
+}
+
 struct EffectImage: View {
     
     @Binding var image: UIImage
     @Binding var isOn: Bool
     
+    @State private var height: CGFloat = 0
+    
+    struct HeightPreference: PreferenceKey {
+        
+        static var defaultValue: CGFloat = 0
+        
+        static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+            value = nextValue()
+        }
+        
+    }
+    
     var body: some View {
-        Image(uiImage: effectImage(isOn))
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+//        GeometryReader { proxy in
+//            Image(uiImage: self.effectImage(self.isOn))
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .frame(width: proxy.size.width)
+//                .preference(key: HeightPreference.self, value: self.height(width: proxy.size.width))
+//        }
+//        .frame(height: height)
+//        .onPreferenceChange(HeightPreference.self) { (value) in
+//            self.height = value
+//        }
+        ImageView(image: $image)
+    }
+    
+    private func height(width: CGFloat) -> CGFloat {
+        return image.size.height * width / image.size.width
     }
     
     private func effectImage(_ flag: Bool) -> UIImage {
+        return image
         if !flag { return image }
         guard let ciImage = CIImage(image: image) else { return image }
         let filter = CIFilter(name: "CIColorMonochrome")
@@ -82,7 +143,7 @@ struct EffectImage: View {
 
 struct ImageEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageEditorView(image: UIImage.filledImage(size: .init(width: 200, height: 150))) { _ in }
+        ImageEditorView(image: UIImage.filledImage(size: .init(width: 200, height: 200))) { _ in }
     }
 }
 

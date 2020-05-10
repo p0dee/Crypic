@@ -10,7 +10,10 @@
 		02A8310D245AD1C200B509E3 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8310C245AD1C200B509E3 /* Picture.swift */; };
 		02A8310F245AD23900B509E3 /* PictureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8310E245AD23900B509E3 /* PictureStore.swift */; };
 		02A83111245AD25500B509E3 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A83110245AD25500B509E3 /* ButtonStyles.swift */; };
-		02A83113245AD34100B509E3 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A83112245AD34100B509E3 /* Switcher.swift */; };
+		02A83113245AD34100B509E3 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A83112245AD34100B509E3 /* SegmentedControl.swift */; };
+		02A83115245D1C7F00B509E3 /* DrumRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A83114245D1C7F00B509E3 /* DrumRoll.swift */; };
+		02A8311724681C3100B509E3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8311624681C3100B509E3 /* DetailView.swift */; };
+		A670219C2463EF6E00BC2CFF /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670219B2463EF6E00BC2CFF /* Notes.swift */; };
 		A6F541002451899E006C5E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F540FF2451899E006C5E9D /* AppDelegate.swift */; };
 		A6F541022451899E006C5E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F541012451899E006C5E9D /* SceneDelegate.swift */; };
 		A6F541042451899E006C5E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F541032451899E006C5E9D /* ContentView.swift */; };
@@ -44,7 +47,10 @@
 		02A8310C245AD1C200B509E3 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		02A8310E245AD23900B509E3 /* PictureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureStore.swift; sourceTree = "<group>"; };
 		02A83110245AD25500B509E3 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
-		02A83112245AD34100B509E3 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		02A83112245AD34100B509E3 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		02A83114245D1C7F00B509E3 /* DrumRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRoll.swift; sourceTree = "<group>"; };
+		02A8311624681C3100B509E3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A670219B2463EF6E00BC2CFF /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		A6F540FC2451899E006C5E9D /* Crypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F540FF2451899E006C5E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6F541012451899E006C5E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,13 +119,16 @@
 			children = (
 				A6F540FF2451899E006C5E9D /* AppDelegate.swift */,
 				A6F541012451899E006C5E9D /* SceneDelegate.swift */,
+				A6F541032451899E006C5E9D /* ContentView.swift */,
+				02A8311624681C3100B509E3 /* DetailView.swift */,
 				02A8310C245AD1C200B509E3 /* Picture.swift */,
 				02A8310E245AD23900B509E3 /* PictureStore.swift */,
-				A6F541032451899E006C5E9D /* ContentView.swift */,
-				02A83110245AD25500B509E3 /* ButtonStyles.swift */,
-				02A83112245AD34100B509E3 /* Switcher.swift */,
 				A6F5412F2451BCB4006C5E9D /* ImagePicker.swift */,
+				02A83110245AD25500B509E3 /* ButtonStyles.swift */,
+				02A83112245AD34100B509E3 /* SegmentedControl.swift */,
+				02A83114245D1C7F00B509E3 /* DrumRoll.swift */,
 				A6F541312455526B006C5E9D /* ImageEditorView.swift */,
+				A670219B2463EF6E00BC2CFF /* Notes.swift */,
 				A6F54105245189A0006C5E9D /* Assets.xcassets */,
 				A6F5410A245189A0006C5E9D /* LaunchScreen.storyboard */,
 				A6F5410D245189A0006C5E9D /* Info.plist */,
@@ -286,11 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A8310D245AD1C200B509E3 /* Picture.swift in Sources */,
+				02A8311724681C3100B509E3 /* DetailView.swift in Sources */,
 				A6F541322455526B006C5E9D /* ImageEditorView.swift in Sources */,
 				A6F541002451899E006C5E9D /* AppDelegate.swift in Sources */,
 				A6F541302451BCB4006C5E9D /* ImagePicker.swift in Sources */,
+				A670219C2463EF6E00BC2CFF /* Notes.swift in Sources */,
 				02A8310F245AD23900B509E3 /* PictureStore.swift in Sources */,
-				02A83113245AD34100B509E3 /* Switcher.swift in Sources */,
+				02A83113245AD34100B509E3 /* SegmentedControl.swift in Sources */,
+				02A83115245D1C7F00B509E3 /* DrumRoll.swift in Sources */,
 				02A83111245AD25500B509E3 /* ButtonStyles.swift in Sources */,
 				A6F541022451899E006C5E9D /* SceneDelegate.swift in Sources */,
 				A6F541042451899E006C5E9D /* ContentView.swift in Sources */,

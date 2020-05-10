@@ -39,6 +39,7 @@ struct AddButtonStyle: ButtonStyle {
                     RoundedRectangle(cornerRadius: 8).stroke(lineWidth: 6).fill(Color.blue)
                 )
                 .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+                .contentShape(Rectangle()) //ButtonStyle側につける
         }
     }
     
